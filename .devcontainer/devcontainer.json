@@ -1,0 +1,16 @@
+{
+    "name": "Kisi Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
+    "postStartCommand": "echo '*'; echo '*         @LEGENDXOPL Bot Running      *'; echo '*'; python /workspaces/Kisi/BROTHERHOOD.py",
+    "postCreateCommand": "pip install pymongo python-telegram-bot pyTelegramBotAPI certifi && chmod +x /workspaces/Kisi/*",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python"
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
